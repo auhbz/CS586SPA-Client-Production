@@ -449,10 +449,6 @@ class AppComponent {
     constructor(http, auth) {
         this.auth = auth;
         this.title = 'Comp586ProjectClient';
-        this.baseUrl = 'https://localhost:5001/';
-        http.get(this.baseUrl + 'weatherforecast').subscribe(result => {
-            this.forecasts = result;
-        }, error => console.error(error));
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_auth0_auth0_angular__WEBPACK_IMPORTED_MODULE_2__["AuthService"])); };
